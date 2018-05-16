@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#co.com.vista#bienvenido.xhtml"
+  PATH="/co.com.vista/bienvenido.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#index.xhtml" PATH="/index.xhtml"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#index.xhtml:0" NAME="item"
+   PATH="/index.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="bienvenido:#{loginBean.iniciarSesion}:#co.com.vista#bienvenido.xhtml"
+    NAME="output" PATH="/co.com.vista/bienvenido.xhtml"
+    TARGET="rules:#co.com.vista#bienvenido.xhtml"
+    TITLE="#{loginBean.iniciarSesion}:bienvenido" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>
